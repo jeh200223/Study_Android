@@ -1,0 +1,48 @@
+LinearLayout
+    - orientation : vertical
+
+    TextInputLayout
+        - id : textField1
+        - hint : TextField1
+        - layout_height : wrap_content
+        - counterEnabled : true
+        - counterMaxLength : 20
+        - helperTextEnabled : true
+        - helperText : 하단 메시지 입니다
+        - startIconDrawable : 아무거나
+        - endIconMode : clear_text
+
+        TextInputEditText
+            - hint : 삭제
+
+    TextInputLayout
+        - id : textField2
+        - hint : TextField2
+        - layout_height : wrap_content
+        - endIconMode : password_toggle
+
+        TextInputEditText
+            - hint : 삭제
+            - inputType : text|textPassword
+
+    Button
+        - id : button
+        - text : error 설정하기
+
+    Button
+        - id : button2
+        - text : error 해제하기
+
+    Button
+        - id : button3
+        - text : 문자열 값 가져오기
+
+    TextView
+        - id : textView
+        - textAppearance : Large
+
+    TextView
+        - id : textView2
+        - textAppearance : Large
+
+

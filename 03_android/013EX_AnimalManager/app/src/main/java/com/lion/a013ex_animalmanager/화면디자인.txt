@@ -1,0 +1,47 @@
+LinearLayout
+    - orientation : vertical
+
+    TextInputLayout
+        - id : textFieldName
+        - hint : 이름
+        - startIconDrawable : icon1
+        - endIconMode : clear_text
+        - layout_height : wrap_content
+
+        TextInputEditText
+            - hint : 삭제
+            - singleLine : true
+
+    TextInputLayout
+        - id : textFieldType
+        - hint : 종류
+        - startIconDrawable : icon2
+        - endIconMode : clear_text
+        - layout_height : wrap_content
+
+        TextInputEditText
+            - hint : 삭제
+            - singleLine : true
+
+    TextInputLayout
+        - id : textFieldAge
+        - hint : 나이
+        - startIconDrawable : icon3
+        - endIconMode : clear_text
+        - layout_height : wrap_content
+
+        TextInputEditText
+            - hint : 삭제
+            - inputType : number|number
+            - imeOptions : actionDone
+            - singleLine : true
+
+    Button
+        - id : buttonSave
+        - text : 등록 완료
+        - style : outlined
+
+    Button
+        - id : buttonShow
+        - text : 정보 출력
+        - style : outlined

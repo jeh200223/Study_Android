@@ -1,0 +1,19 @@
+LinearLayout
+    - orientation : vertical
+
+    LinearLayout
+        - orientation : Horizontal(혹은 생략)
+        - layout_height : wrap_content
+        - layout_weight : 1
+
+        Button x 4
+        - layout_weight : 1
+        - layout_height : match_parent
+
+    LinearLayout
+        - orientation : Vertical
+        - layout_height : wrap_content
+        - layout_weight : 1
+
+        Button x 4
+        - layout_weight : 1

@@ -1,0 +1,130 @@
+LinearLayout
+    - orientation : vertical
+
+    ScrollView
+
+        LinearLayout
+            - orientation : vertical
+
+            TextView
+                - text : 동물 종류
+
+            ChipGroup
+                - id : chipGroupAnimalType
+                - singleSelection : true
+                - checkedChip : chipDogType
+                - layout_height : wrap_content
+
+                Chip
+                    - id : chipDogType
+                    - text : 강아지
+                    - style : Filter
+
+                Chip
+                    - id : chipCatType
+                    - text : 고양이
+                    - style : Filter
+
+                Chip
+                    - id : chipParrotType
+                    - text : 앵무새
+                    - style : Filter
+
+            Space
+                - layout_height : 20dp
+
+            TextInputLayout
+                - id : textFieldAnimalName
+                - hint : 동물 이름
+                - endIconMode : clear_text
+                - layout_height : wrap_content
+
+                TextInputEditText
+                    - hint : 삭제
+                    - singleLine : true
+
+            Space
+                - layout_height : 20dp
+
+            TextView
+                - text : 동물의 나이
+
+            Slider
+                - id : sliderAnimalAge
+                - valueFrom : 0.0
+                - valueTo : 50.0
+                - stepSize : 1.0
+                - labelBehavior : floating
+
+            Space
+                - layout_height : 20dp
+
+            TextView
+                - text : 성별
+
+            RadioGroup
+                - id : radioGroupGender
+                - layout_height : wrap_content
+                - checkedButton : radioButtonMale
+
+                RadioButton
+                    - id : radioButtonMale
+                    - text : 숫컷
+
+                RadioButton
+                    - id : radioButtonFemale
+                    - text : 암컷
+
+            Space
+                - layout_height : 20dp
+
+            TextView
+                - text : 몸무게 범위
+
+            RangeSlider
+                - id : rangeSliderAnimalWeight
+                - valueFrom : 0.0
+                - valueTo : 200.0
+                - stepSize : 1.0
+                - labelBehavior : floating
+                - values : array1.xml
+
+            Space
+                - layout_height : 20dp
+
+            TextView
+                - text : 좋아하는 간식
+
+            ChipGroup
+                - id : chipGroupAnimalFood
+                - layout_height : wrap_content
+
+                Chip
+                    - id : chipApple
+                    - text : 사과
+                    - style : Filter
+
+                Chip
+                    - id : chipBanana
+                    - text : 바나나
+                    - style : Filter
+
+                Chip
+                    - id : chipJujube
+                    - text : 대추
+                    - style : Filter
+
+            Space
+                - layout_height : 20dp
+
+            Button
+                - id : buttonSave
+                - text : 입력 완료
+
+            Button
+                - id : buttonShow
+                - text : 동물 정보 출력
+
+            TextView
+                - id : textViewResult
+                - textAppearance : Large

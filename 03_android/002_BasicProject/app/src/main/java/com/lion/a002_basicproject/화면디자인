@@ -1,0 +1,18 @@
+[ activity_main.xml ]
+
+LinearLayout
+   - orientation : vertical
+
+   EditText(Number)
+       - id : number1
+
+   EditText(Number)
+       - id : number2
+
+   Button
+       - id : buttonPlus
+       - text : 더하기
+
+   TextView
+       - id : textViewResult
+       - textAppearance : Large

@@ -1,0 +1,10 @@
+LinearLayout
+   - orientation : vertical
+
+   EditText
+
+   Button
+   - text : 버튼을 눌러주세요
+
+   TextView
+   - textAppearance : Large

@@ -1,0 +1,110 @@
+[activity_main.xml]
+
+ConstraintLayout
+
+    RecyclerView
+        - layout_width : 0dp
+        - layout_height : 0dp
+        - layout_constraintBottom_toBottomOf : parent
+        - layout_constraintEnd_toEndOf : parent
+        - layout_constraintStart_toStartOf : parent
+        - layout_constraintTop_toTopOf : parent
+        - id : recyclerViewMain
+
+    FloatingActionButton
+        - id : floatingActionButtonMain
+        - layout_marginEnd : 50dp
+        - layout_marginBottom : 50dp
+        - layout_constraintBottom_toBottomOf : parent
+        - layout_constraintEnd_toEndOf : parent
+        - srcCompat : ic_menu_edit
+
+
+[main_row.xml]
+
+LinearLayout
+    - orientation  : vertical
+    - padding : 10dp
+
+    TextView
+        - id : textViewMainRow
+        - textAppearance : Large
+        - layout_width : match_parent
+        - layout_height : wrap_content
+
+[activity_input_data.xml]
+
+LinearLayout
+    - orientation : vertical
+
+    TextInputLayout
+        - id : textFieldName
+        - startIconDrawable : 아무거나
+        - endIconMode : clear_text
+        - hint : 이름
+        - layout_height : wrap_content
+
+        TextInputEditText
+            - hint : 삭제
+            - singleLine : true
+
+    Space
+        - layout_height : 20dp
+
+    TextInputLayout
+        - id : textFieldNickName
+        - startIconDrawable : 아무거나
+        - endIconMode : clear_text
+        - hint : 닉네임
+        - layout_height : wrap_content
+
+        TextInputEditText
+            - hint : 삭제
+            - singleLine : true
+
+    Space
+        - layout_height : 20dp
+
+    TextInputLayout
+        - id : textFieldAge
+        - startIconDrawable : 아무거나
+        - endIconMode : clear_text
+        - hint : 나이
+        - layout_height : wrap_content
+
+        TextInputEditText
+            - hint : 삭제
+            - imeOptions : actionDone
+            - inputType : number|number
+            - singleLine : true
+
+
+[activity_show_data.xml]
+
+LinearLayout
+    - orientation : vertical
+
+    TextView
+        - id : textViewShowDataName
+        - textAppearance : Large
+
+    Space
+        - layout_height : 20dp
+
+    TextView
+        - id : textViewShowDataNickName
+        - textAppearance : Large
+
+    Space
+        - layout_height : 20dp
+
+    TextView
+        - id : textViewShowDataAge
+        - textAppearance : Large
+
+    Space
+        - layout_height : 20dp
+
+    Button
+        - id : buttonShowDataFinish
+        - text : 메인 화면

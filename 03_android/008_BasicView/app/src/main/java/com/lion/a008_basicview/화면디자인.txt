@@ -1,0 +1,34 @@
+LinearLayout
+    - orientation : vertical
+
+    TextView
+        - id : textView
+        - textAppearance : Large
+
+    TextView
+        - id : textView2
+        - textAppearance : Large
+
+    TextView
+        - id : textView3
+        - textAppearance : Large
+
+    Space
+        - layout_height : 20dp
+
+    Button
+        - id : button
+        - text : 눌러주세요
+
+    Space
+        - layout_height : 20dp
+
+    EditText(Plain Text)
+        - id : editTextText
+        - hint : 첫 번째 입력 요소
+
+    EditText(Plain Text)
+        - id : editTextText2
+        - hint : 두 번째 입력 요소
+        - inputType : number - number
+        - imeOptions : search

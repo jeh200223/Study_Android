@@ -1,0 +1,40 @@
+ConstraintLayout
+
+    TextView
+        - text : 이름
+        - textAppearance : Large
+        - layout_constraintStart_toStartOf : parent
+        - layout_constraintTop_toTopOf : parent
+
+    EditText
+        - text : 삭제
+        - layout_width : 0dp
+        - layout_constraintStart_toEndOf : @+id/textView
+        - layout_constraintEnd_toEndOf : parent
+        - layout_constraintTop_toTopOf : parent
+
+    TextView
+        - text : 나이
+        - textAppearance Large
+        - layout_constraintTop_toBottomOf : @+id/editTextText
+        - layout_constraintStart_toStartOf : parent
+
+    EditText
+        - text : 삭제
+        - layout_width : 0dp
+        - layout_constraintTop_toBottomOf : @+id/editTextText
+        - layout_constraintStart_toEndOf : @+id/textView2
+        - layout_constraintEnd_toEndOf : parent
+
+    Button
+        - layout_width : 0dp
+        - layout_constraintEnd_toStartOf : @+id/button15
+        - layout_constraintHorizontal_bias : 0.0
+        - layout_constraintTop_toBottomOf : @+id/editTextText2
+        - layout_constraintStart_toStartOf : parent
+
+    Button
+        - layout_width : 0dp
+        - layout_constraintTop_toBottomOf : @+id/editTextText2
+        - layout_constraintStart_toEndOf : @+id/button14
+        - layout_constraintEnd_toEndOf : parent

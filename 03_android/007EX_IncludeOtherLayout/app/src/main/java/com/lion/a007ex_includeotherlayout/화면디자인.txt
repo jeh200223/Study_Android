@@ -1,0 +1,57 @@
+[ edit_layout.xml ]
+
+LinearLayout
+    - orientation : vertical
+
+    EditText(Number)
+        - id : editTextNumber1
+
+    EditText(Number)
+        - id : editTextNumber2
+
+[ text_layout.xml ]
+
+LinearLayout
+    - orientation : vertical
+
+    TextView
+        - id : textViewResult
+        - textAppearance : Large
+
+[ button_layout.xml ]
+
+LinearLayout
+    - orientation : vertical
+
+    Button
+        - id : buttonPlus
+        - text : 더하기
+
+    Button
+        - id : buttonMinus
+        - text : 빼기
+
+    Button
+        - id : buttonMulti
+        - text : 곱하기
+
+    Button
+        - id : buttonSub
+        - text : 나누기
+
+[ activity_main.xml ]
+
+LinearLayout
+    - orientation : vertical
+
+    include
+        - id : include1
+        - layout : edit_layout
+
+    include
+        - id : include2
+        - layout : text_layout
+
+    include
+        - id : include3
+        - layout : button_layout
